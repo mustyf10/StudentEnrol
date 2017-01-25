@@ -1,6 +1,7 @@
 package com.enrol
-
+//class decleration
 class Student {
+	//variables
 	String name
 	String studentID
 	Date dob
@@ -9,6 +10,12 @@ class Student {
 	String username
 	String Password
 	String course
+
+	String toString() {
+	"$name,$studentID,$course"
+	}
+
+	//constraints
     	static constraints = {
 		name blank:false, nullable:false
 		studentID blank:false, nullable:false

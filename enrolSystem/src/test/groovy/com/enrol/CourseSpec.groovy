@@ -15,8 +15,10 @@ class CourseSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void totalFees() {
+	when: "A course has a title and fees"
+	def computing=new Course(title:'BSc Hon Computing', tuitionFees:9000)
+	then:"The calculateFees method will total fees"
+	computing.calculateFees()==36000
     }
 }
