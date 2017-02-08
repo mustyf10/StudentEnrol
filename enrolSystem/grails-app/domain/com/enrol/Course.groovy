@@ -9,9 +9,11 @@ class Course {
 	Date startDate
 	Date endDate
 	String description
+	Boolean isItRunning
 	int numberOfStudents
 	double tuitionFees
 	String studyMode
+static hasMany=[students:Student,lecturers:Lecturer,modules:Module]
 	
 	double calculateFees(){
 		4*tuitionFees

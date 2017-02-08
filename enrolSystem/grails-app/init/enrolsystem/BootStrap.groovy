@@ -3,7 +3,7 @@ package com.enrol
 class BootStrap {
 
     def init = { servletContext ->
-	def computing=new Course(
+	/*def computing=new Course(
 	title:'BSc Hon Computing',
 	code:'COMP234',
 	leader:'Dr Mary Poppins',
@@ -15,6 +15,14 @@ class BootStrap {
 	tuitionFees:9000
 	).save()
     }
+    
+    lect1=new Lecturer (fullname: 'Dr Steve Crossbar',
+			post: 'Lecturer',
+			subject: 'Web Design',
+			lecturerEmail: 's.h.crossbar@theuni.ac.uk',
+			office: 'Office-2211',
+			bio: '" "'*/
+
     def destroy = {
     }
 }

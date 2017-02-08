@@ -9,8 +9,8 @@ class Student {
 	String email
 	String username
 	String Password
-	String course
-
+	Course course
+static hasMany=[modules:Module]
 	String toString() {
 	"$name,$studentID,$course"
 	}

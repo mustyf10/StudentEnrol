@@ -4,9 +4,10 @@ class Module {
 	String title
 	String code
 	int credits
-	String lecturer
-	String course
+	Lecturer lecturer
 	String description
+static hasMany=[courses:Course,students:Student]
+static belongsTo=Course,Student]
 	static constraints = {
 		title blank:false, nullable:false
 		code blank:false, nullable:false

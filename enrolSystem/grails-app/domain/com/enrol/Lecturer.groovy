@@ -8,6 +8,11 @@ class Lecturer {
 	String lecturerEmail
 	String office
 	String bio
+	String userName
+	String password
+
+static hasMany=[courses:Course,modules:Module]
+static belongsTo=Course
 
 	//constraints
     	static constraints = {
@@ -17,5 +22,7 @@ class Lecturer {
 	lecturerEmail blank:false, nullable:false, email:true
 	office blank:false, nullable:false
 	bio blank:false, nullable:false, maxSize:5000, widget:'textarea'
+	userName blank:false, nullable:false, unique:true,
+	password blank:false, nullable:false, password:true
     	}
 }
